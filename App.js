@@ -1,14 +1,9 @@
 const express = require ("express");
 const app = express();
 
-app.get ("/students", (request, response) =>{
-    response.status ().json({
-        status: "fail",
-        data: {
-            message: "undefined routes"
-        }
+app.get ("/", (req, res) =>{
+    res.send ("hello world");
     })
-})
 
 const port = 3000;
 
