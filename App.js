@@ -1,12 +1,21 @@
 const express = require ("express");
 const app = express();
 
+app.set("view engine", "jsx");
+app.engine("jsx",require("express-react-views").createEngine());
+
 app.get ("/", (req, res) =>{
-    res.send ("hello world!");
+    res.send ("hello!");
     })
 
-const port = 3000;
+module.exports = app;
 
-app.listen (port, () =>{
-    console.log (`Server started on port ${port}...`);
-});
+//model:
+
+/*
+pic: 
+first name: 
+last name:
+email: 
+studentID: 
+*/
