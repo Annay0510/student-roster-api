@@ -1,0 +1,1 @@
+//this page is to show one single student in our database

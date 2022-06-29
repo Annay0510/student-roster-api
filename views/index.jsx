@@ -1,0 +1,1 @@
+//this page is to show all the objects in the database
